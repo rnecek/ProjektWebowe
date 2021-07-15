@@ -1,0 +1,304 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Rafał Nęcek" />
+    <meta name="viewport" content="width=device-width; initial-scale=1">
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon" />
+    <title>WeTravel - Rafał Nęcek</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/w3.css">
+    <script defer src="assets/script/popupimg.js"> </script>
+    <script defer src="assets/script/moreimages.js"> </script>
+    <script defer src="assets/script/popup.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img class="logo" src="assets/images/logo.png" alt="company logo">
+            <img id="hamburgerimg" src="assets/images/hamburger_icon.png" alt="hamburger image">
+            <input class="hamburger" type="checkbox">
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            HOME
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about">
+                            ABOUT
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#destinations">
+                            DESTINATIONS
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#process">
+                            PROCESS
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#services">
+                            SERVICES
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#partners">
+                            PARTNERS
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            CONTACT
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <article>
+        <div class="top">
+            <h1>Let's travel together!</h1>
+            <p>
+                Our world is a global village so take advantage of it and fly somewhere! Get to know the culture and meet new people!
+            </p>
+            <div class="popup" onclick="myFunction()">Still hesitant?
+                <span class="popuptext" id="myPopup">Here is one-time code for 10$! <u>A7B7B824SX</u></span>
+
+            </div>
+        </div>
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <h2>Awesome!</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    Here is your one-time voucher for 10$! <u>13h82fdasun3x</u>
+                </div>
+            </div>
+        </div>
+        <div class="about-us" id="about">
+            <p>
+                If you don't believe <b>you are the best</b>, then you will never achieve all that you are capable of.
+            </p>
+            <img src="assets/images/cr7sign.png" alt="signature" id="signature" />
+        </div>
+        <div class="skills" style="background-color: white;">
+            <h1>Professional Skills</h1>
+            <p>RECOGNISABILITY 90%</p>
+            <hr>
+            <p>RELIABILITY 100%</p>
+            <hr>
+            <p>EXPERIENCE 80%</p>
+            <hr>
+        </div>
+        <div class="dashboard">
+            <div><img src="assets/images/icon-calendar.png" alt="calendar">
+                <p>12<br>YEARS OF EXPERIENCE</p>
+            </div>
+            <div><img src="assets/images/icon-dollar.png" alt="dollar">
+                <p>907512<br>SAVED MONEY IN USD</p>
+            </div>
+            <div><img src="assets/images/icon-country.png" alt="country">
+                <p>122<br>COUNTRIES VISITED</p>
+            </div>
+            <div><img src="assets/images/icon-people.png" alt="staff">
+                <p>100+<br>HIRED PEOPLE</p>
+            </div>
+        </div>
+        <div class="display" id="destinations">
+            <div class="mosaic">
+                <img src="assets/images/cracow.jpg" alt="Cracow">
+            </div>
+            <div class="mosaic">
+                <img src="assets/images/warsaw.jpg" alt="Warsaw">
+            </div>
+            <div class="mosaic">
+                <img src="assets/images/berlin.jpg" alt="Berlin">
+            </div>
+            <div class="mosaic">
+                <img src="assets/images/london.jpg" alt="London">
+            </div>
+            <div class="mosaic">
+                <img src="assets/images/copenhagen.jpg" alt="Copenhagen">
+            </div>
+            <div class="mosaic">
+                <img src="assets/images/moscow.jpg" alt="Moscow">
+            </div>
+            <div class="mosaic">
+                <img src="assets/images/rome.jpg" alt="Rome">
+            </div>
+            <div class="mosaic">
+                <img src="assets/images/madrid.jpg" alt="Madrid">
+            </div>
+            <div class="mosaic mosaic_more">
+                <img src="assets/images/egypt.jpg" alt="Egypt">
+            </div>
+            <div class="mosaic mosaic_more">
+                <img src="assets/images/newyork.jpg" alt="New York">
+            </div>
+            <div class="mosaic mosaic_more">
+                <img src="assets/images/southafrica.jpg" alt="South Africa">
+            </div>
+            <div class="mosaic mosaic_more">
+                <img src="assets/images/china.jpg" alt="China">
+            </div>
+
+            <button id="moreimages" onclick="showmore()">Check flights outside of Europe</button>
+        </div>
+        <div class="video" id="process">
+            <h1>How do we work?</h1>
+            <p>Trip organisation is our passion! Learn how we try our best one by one</p>
+            <video controls class="video" id="video" preload="metadata">
+                <source src="assets/vid/videoyt.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="icons" id="services">
+            <div class="tile">
+                <img src="assets/images/diamond.png" alt="tile icon">
+                <h3>EXCELLENCE</h3>
+                <p>Experienced assistance</p>
+            </div>
+            <div class="tile">
+                <img src="assets/images/archery.png" alt="tile icon">
+                <h3>ADVENTURE</h3>
+                <p>Unforgettable experience</p>
+            </div>
+            <div class="tile">
+                <img src="assets/images/mobile.png" alt="tile icon">
+                <h3>MEMORIES</h3>
+                <p>You will have so many that your phone will run out of space</p>
+            </div>
+            <div class="tile">
+                <img src="assets/images/gamepad.png" alt="tile icon">
+                <h3>GAME</h3>
+                <p>It feels like a game, but it's reality</p>
+            </div>
+            <div class="tile">
+                <img src="assets/images/paper-plane.png" alt="tile icon">
+                <h3>FLY EVERYWHERE</h3>
+                <p>Just like that, like paper plane</p>
+            </div>
+            <div class="tile">
+                <img src="assets/images/star.png" alt="tile icon">
+                <h3>HIGH STANDARD</h3>
+                <p>4.9/5 rate from over 10k+ customers</p>
+            </div>
+            <div class="tile">
+                <img src="assets/images/wand.png" alt="tile icon">
+                <h3>MAGIC</h3>
+                <p>We will sort everything out magically</p>
+            </div>
+            <div class="tile">
+                <img src="assets/images/paint.png" alt="tile icon">
+                <h3>ART</h3>
+                <p>Places from artwork at your fingertips</p>
+            </div>
+        </div>
+        <div class="slider">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <img src="assets/images/slider1.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="assets/images/slider2.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="assets/images/slider3.jpg" style="width:100%">
+            </div>
+        </div>
+        <div style="text-align:center; background-color:#4F5299;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <script>
+            var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+} </script>
+
+        <div class="partners" id="partners">
+            <img src="assets/images/partner1.png" alt="UNWTO">
+            <img src="assets/images/partner2.png" alt="Kancelaria Premiera">
+            <img src="assets/images/partner3.png" alt="MSiT">
+            <img src="assets/images/partner4.png" alt="Miasto Kraków">
+        </div>
+        <div class="form" id="contact">
+            <span id="titleform">Need something?</span><br>
+            <span id="titleh2">Feel free to tell us in the form below</span>
+            <form action="mailto:rafalnecek00@gmmail.com" method="post">
+                <input class="form-near" type="text" name="name" value="Your name">
+                <input class="form-near" type="text" name="mail" value="Your email">
+                <input class="form-title" type="text" name="mail" value="Topic">
+                <input class="form-comment" type="text" name="comment" value="Write something you want to tell us..." size="100"><br><br>
+                <input type="submit" class="submit-button" value="SEND MESSAGE">
+            </form>
+        </div>
+        <footer>
+            <div>
+                <p id="wetravel">WeTravel, Inc.</p>
+                <p>&copy 2021 WeTravel. All rights reserved</p>
+                <p>Rafał Nęcek - nr albumu 13190 </p>
+            </div>
+            <div>
+                <p>rafalnecek00@gmail.com </p>
+                <p>+48122800000</p>
+            </div>
+            <div>
+                <p>Project</p>
+                <p>About</p>
+                <p>Services</p>
+                <p>Carreer</p>
+            </div>
+            <div>
+                <p>News</p>
+                <p>Events</p>
+                <p>Contact</p>
+                <p>Legals</p>
+            </div>
+            <div>
+                <p>Facebook</p>
+                <p>Twitter</p>
+                <p>Instagram</p>
+                <p>Dribbble</p>
+            </div>
+        </footer>
+
+    </article>
+</body>
+
+</html>
